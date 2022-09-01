@@ -3,7 +3,7 @@ Demonstration for Upgrade Asistant removing Prefer32Bit flag when upgrading proj
 
 ## 1. Legacy project file
 
-Original file marked with platform `AnyCPU` and `Prefer32Bit`:
+Original file (branch _[Original](https://github.com/Gakk/UpgradeAssistantPrefer32Bit/tree/Original)_) marked with platform `AnyCPU` and `Prefer32Bit`:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -23,6 +23,8 @@ When running this application it consumes 1.6 GiB RAM, as it is run as a 32-bit 
 If compiled as x86 it would consume 0.8 GiB RAM, and as AnyCpu on 64-bit 3.8 GiB.
 
 ## 2. Opgraded to SDK style project file
+
+Upgraded file (branch _[Converted](https://github.com/Gakk/UpgradeAssistantPrefer32Bit/tree/Converted)_ and _main_) where markings for both platform and Prefer32Bit is gone:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
